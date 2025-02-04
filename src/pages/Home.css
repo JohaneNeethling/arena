@@ -213,17 +213,18 @@
   .cta-btn {
     font-size: 1.5rem;
     padding: 12px 20px;
+    background-color: white;
   }
 
   .featuredLine {
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 0.2rem;
     text-align: center;
     display: flex;
   }
 
   .featuredLine2 {
-    font-size: 2.5em;
+    font-size: 2em;
     letter-spacing: 0.2rem;
     text-align: center;
     display: flex;

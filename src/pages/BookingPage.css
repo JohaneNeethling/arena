@@ -1,24 +1,17 @@
 /* General Container */
 .booking-container {
-  border-radius: 15px;
-  margin: 50px auto;
-  transition: all 0.3s ease-in-out;
-  max-width: 1200px;
+  background: transparent;
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .booking-container:hover {
   box-shadow: 0 6px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Heading */
-.heading {
-  color: #edc76f;
-  font-size: 4rem;
-  text-align: center;
-}
-
 .booking-description {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   max-width: 800px;
   text-align: center;
   color: #ddd;
@@ -278,11 +271,16 @@ label {
 /* Transition for the entire page */
 @media (max-width: 768px) {
   .booking-container {
-    padding: 2rem;
+    align-content: center;
   }
 
   .heading {
     font-size: 2rem;
+  }
+
+  .booking-description {
+    font-size: 1rem;
+    margin-left: 1.5rem;
   }
 
   .input-field,

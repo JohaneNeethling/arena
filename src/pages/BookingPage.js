@@ -168,14 +168,6 @@ export function BookingPage({ bookedDates }) {
       <div className="booking-content">
         <img src={VENUEPIC} alt="VenuePic" className="venuePicLogo" />
         <div className="text-content">
-          <motion.h1
-            className="heading"
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            NEED A QUOTE?
-          </motion.h1>
           <p className="booking-description">
             Thinking about hosting your next event at Arena Restaurant? We’re
             here to help! Request a customized quote tailored to your specific
@@ -183,9 +175,7 @@ export function BookingPage({ bookedDates }) {
             special occasion, our team will provide you with detailed pricing
             for venue rental, equipment, and additional services. Simply fill
             out the form below with your event details, and we’ll get back to
-            you with an accurate quote to make your event a success. Let us help
-            bring your vision to life with flexible pricing and exceptional
-            service!
+            you with an accurate quote to make your event a success.
           </p>
           <button className="book-btn" onClick={scrollToForm}>
             BOOK YOUR EVENT!
@@ -200,9 +190,6 @@ export function BookingPage({ bookedDates }) {
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
       >
-        <p className="featuredLine">
-          RESTAURANT | LOUNGE & BAR | PARTIES | SPA
-        </p>
         <motion.div className="dishes-container" layout>
           {dishes.slice(0, 3).map((dish) => (
             <motion.div

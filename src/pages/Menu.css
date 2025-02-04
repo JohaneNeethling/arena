@@ -15,7 +15,7 @@ body {
 
 .menu-title {
   color: #edc76f;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .menu-paragraph {
@@ -54,7 +54,7 @@ body {
 
 /* Category Button */
 .category-button {
-  background-color: white;
+  background-color: white !important;
   border: none;
   padding: 10px 20px;
   border-radius: 25px;
