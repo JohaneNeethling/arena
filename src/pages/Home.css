@@ -1,0 +1,316 @@
+.hero {
+  background: transparent;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  padding: 2rem;
+}
+
+.welcome-tag {
+  text-align: left;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.restau-tag {
+  text-align: right;
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.arenaTag {
+  color: #edc76f;
+  font-size: 6rem !important;
+  font-weight: 800;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #edc76f;
+}
+
+.cta-btn:hover {
+  background-color: #edc76f;
+  color: white;
+}
+
+/* Featured Section */
+.featured-images {
+  padding: 50px;
+  background-color: transparent;
+  text-align: center;
+}
+
+.featuredLine {
+  font-size: 1.7em;
+  margin-bottom: 4rem;
+  color: #edc76f;
+  letter-spacing: 0.9rem;
+  font-weight: 900;
+}
+
+.featuredLine2 {
+  font-size: 1.9em;
+  margin-bottom: 4rem;
+  color: #edc76f;
+  letter-spacing: 0.3rem;
+  font-weight: 900;
+}
+
+/* Events Section */
+
+.weeklySpecials {
+  width: 50%;
+}
+
+/* Dishes Container */
+.dishes-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dish-card {
+  width: 30%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.dish-img {
+  width: 200% !important;
+  border-radius: 8px;
+}
+
+.dish-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.featured-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dishes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between dish images */
+}
+
+/* Spa Section */
+.spa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: transparent;
+}
+
+.spa-content {
+  max-width: 50%;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.arenaLogo2 {
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin-left: 25rem;
+  border-color: #edc76f;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+.spa-content h2 {
+  color: #edc76f;
+  font-size: 5rem;
+}
+
+.spa-content p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Book Event Section */
+.book-event {
+  display: flex;
+  padding: 50px;
+  background-color: transparent;
+}
+
+.event-content {
+  max-width: 50%;
+  text-align: right;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.event-content h2 {
+  color: #edc76f;
+  font-size: 5rem;
+}
+
+.event-content p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.arenaLogo3 {
+  max-width: 80%;
+  height: auto;
+  object-fit: cover;
+  margin-right: 25rem;
+  border-color: #edc76f;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .hero {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .featured-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dish-img {
+    display: none;
+  }
+
+  .cta-btn {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+  }
+
+  .featuredLine {
+    font-size: 2.5em;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .featuredLine2 {
+    font-size: 2.5em;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .dishes-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dish-card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .weeklySpecials {
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .spa {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+
+  .spa-content {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-left: 3rem !important;
+  }
+
+  .arenaLogo2 {
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .book-event {
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+  }
+
+  .event-content {
+    max-width: 100%;
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .arenaLogo3 {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+/* Mobile View for Small Screens */
+@media (max-width: 480px) {
+  .cta-btn {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+  }
+
+  .arenaTag {
+    font-size: 3rem !important;
+  }
+
+  .welcome-tag {
+    font-size: 2rem;
+  }
+
+  .restau-tag {
+    font-size: 2rem;
+  }
+
+  .spa-content h2,
+  .event-content h2 {
+    font-size: 3rem;
+  }
+
+  .spa-content p,
+  .event-content p {
+    font-size: 1.2rem;
+  }
+}

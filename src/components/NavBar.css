@@ -1,0 +1,111 @@
+nav {
+  background: black;
+  padding: 0rem 0.5rem;
+  display: flex;
+  margin-top: 2%;
+  z-index: 10;
+  align-items: center;
+  justify-content: space-between; /* Aligns logo and menu */
+}
+
+.brandLogo {
+  height: auto;
+  width: 20%;
+}
+
+ul {
+  display: flex;
+  flex: 1; /* Ensures the ul takes up remaining space */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0 1.7rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  padding: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #f6ce71;
+  bottom: 0;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+a:hover {
+  color: #edc76f;
+  transform: translateY(-5px);
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: flex-start; /* Keeps logo on top */
+  }
+
+  .brandLogo {
+    width: 50%; /* Adjust logo size for smaller screens */
+  }
+
+  ul {
+    display: none; /* Hide menu by default on mobile */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%; /* Full width for the menu */
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  /* Hamburger icon for mobile */
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+  }
+
+  /* Show menu when hamburger is clicked */
+  .show-menu {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .brandLogo {
+    width: 50%;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  a {
+    font-size: 1rem;
+  }
+}

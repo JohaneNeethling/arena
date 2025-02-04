@@ -1,0 +1,182 @@
+.manager-page {
+  background-color: transparent;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 0 auto; /* Center the page on small screens */
+}
+
+.manager-btn,
+.submit-btn-manager,
+.booking-btn-manager {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #edc76f;
+  width: 100%; /* Make buttons take up full width on smaller screens */
+  border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.manager-btn:hover,
+.submit-btn-manager:hover,
+.booking-btn-manager:hover {
+  background-color: #edc76f;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  margin-top: 20px;
+  gap: 10px;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="password"]:focus {
+  border-color: #edc76f;
+  outline: none;
+}
+
+/* Calendar Styling */
+.calendar-container {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 100%; /* Make calendar container responsive */
+}
+
+.react-calendar {
+  background: rgb(0, 0, 0);
+  border: none;
+  width: 100%; /* Make calendar responsive */
+  height: auto;
+  padding: 2rem;
+  box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.react-calendar__tile {
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  height: 5rem;
+  font-size: larger;
+}
+
+.react-calendar__tile--active {
+  background-color: #edc76f !important;
+  color: #fff !important;
+  font-size: larger;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #e74c3c !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  font-size: larger;
+}
+
+/* Hover and Animation Effects */
+button:active,
+.react-calendar__tile:active {
+  transform: scale(0.95);
+}
+
+motion.button {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+motion.button:hover {
+  transform: scale(1.05);
+}
+
+/* Input Button */
+button.show-input-btn {
+  background-color: #edc76f;
+  margin-top: 10px;
+  width: 100%;
+}
+
+button.show-input-btn:hover {
+  background-color: #218838;
+}
+
+motion.div {
+  transition: all 0.3s ease;
+}
+
+/* Mobile and Tablet Responsive Design */
+@media (max-width: 768px) {
+  .manager-page {
+    width: 90%; /* Increase the width on tablets and smaller screens */
+    padding: 15px;
+  }
+
+  .react-calendar {
+    width: 100%; /* Make calendar take full width */
+    padding: 1.5rem; /* Adjust padding for mobile */
+  }
+
+  .button-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .manager-btn,
+  .submit-btn-manager,
+  .booking-btn-manager {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+  }
+
+  input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* Adjust font size for smaller screens */
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 480px) {
+  .manager-page {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .react-calendar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .manager-btn,
+  .submit-btn-manager,
+  .booking-btn-manager {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  input[type="password"] {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}

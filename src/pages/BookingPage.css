@@ -1,0 +1,314 @@
+/* General Container */
+.booking-container {
+  border-radius: 15px;
+  margin: 50px auto;
+  transition: all 0.3s ease-in-out;
+  max-width: 1200px;
+}
+
+.booking-container:hover {
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading */
+.heading {
+  color: #edc76f;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.booking-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  text-align: center;
+  color: #ddd;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.empty-cart {
+  font-size: 1.2rem;
+  max-width: 800px;
+  text-align: center;
+  color: #ddd;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.text-content {
+  margin-right: 10%;
+}
+
+.booking-content {
+  display: flex;
+  align-items: center; /* Vertically centers the content */
+  gap: 20px; /* Adds some space between the image and the text */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.book-btn {
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #edc76f;
+}
+
+.book-btn:hover {
+  background-color: #edc76f;
+  color: white;
+}
+
+.venuePicLogo {
+  max-width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-color: #edc76f;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-radius: 1rem;
+  margin-left: 10%;
+}
+
+@media (max-width: 768px) {
+  .venuePicLogo {
+    max-width: 80%; /* Adjust image size on smaller screens */
+    margin-left: 0;
+  }
+
+  .booking-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .booking-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+
+  .book-btn {
+    font-size: 1.5rem;
+  }
+}
+
+/* Form Styling */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .booking-form {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* Input and Select Styling */
+.input-field,
+select {
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-field:focus,
+select:focus {
+  border-color: #edc76f;
+  background-color: #ecfaff;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+input[type="time"]::-webkit-clear-button {
+  display: none;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* Calendar Styling */
+.calendar-container {
+  overflow: hidden;
+  margin-left: 30%;
+}
+
+.react-calendar {
+  background: rgb(255, 255, 255);
+  border: none;
+  width: 30rem;
+  height: auto;
+  padding: 2rem;
+  color: black;
+}
+
+.react-calendar__tile {
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  height: 5rem;
+  font-size: larger;
+}
+
+.react-calendar__tile--active {
+  background-color: #edc76f !important;
+  color: #fff !important;
+  font-size: larger;
+}
+
+.react-calendar__tile:disabled {
+  background-color: #e74c3c !important;
+  color: #fff !important;
+  cursor: not-allowed;
+  font-size: larger;
+}
+
+/* Cocktail Section */
+.cocktail-title {
+  color: #edc76f;
+  font-size: 4rem;
+  text-align: end;
+  margin-right: 1rem;
+}
+
+.cocktail-description {
+  font-size: 1.2rem;
+  max-width: 800px;
+  text-align: start;
+  color: #ddd;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+/* Button Styling */
+.submit-btn {
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #edc76f;
+  margin-top: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #edc76f;
+  color: white;
+}
+
+.submit-btn:disabled {
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInError 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.form-title {
+  color: #edc76f;
+  font-size: 4rem;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.booking-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.booking-form {
+  margin-left: 3rem;
+  margin-right: 5rem;
+}
+
+/* Form Animations */
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+/* Transition for the entire page */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 2rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .input-field,
+  select,
+  .submit-btn {
+    font-size: 1rem;
+  }
+
+  .booking-form label {
+    font-size: 1rem;
+  }
+
+  .calendar-container {
+    margin-left: 0;
+  }
+
+  .react-calendar {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .cocktail-title {
+    font-size: 2rem;
+  }
+
+  .cocktail-description {
+    font-size: 1rem;
+  }
+}

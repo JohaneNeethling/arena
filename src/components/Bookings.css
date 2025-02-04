@@ -1,0 +1,43 @@
+.react-calendar__tile.booked {
+  text-decoration: line-through;
+  color: red;
+}
+
+.react-calendar__tile {
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__tile:hover {
+  background-color: #f0f0f0;
+}
+
+.react-calendar__tile:disabled {
+  cursor: not-allowed;
+  background-color: #dcdcdc;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .react-calendar {
+    font-size: 14px;
+  }
+
+  .react-calendar__tile {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .react-calendar__tile {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .react-calendar {
+    font-size: 12px;
+  }
+}
